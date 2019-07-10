@@ -12,8 +12,6 @@ class Guster extends Component {
         this.setState({
             inputName: e.target.value
         })
-
-
     }
 
     handleActivity(e) {
@@ -22,7 +20,6 @@ class Guster extends Component {
         })
     }
 
-
     render() {
         const { name, activity, set_name, set_activity } = this.props;
         const { inputName, inputActivity } = this.state;
@@ -30,7 +27,6 @@ class Guster extends Component {
             <div>
                 <h2>Name: {name}</h2>
                 <h2>Activity: {activity}</h2>
-
                 <input type='text' name="name" onChange={(e) => this.handleName(e)} /><br />
                 <button onClick={() => set_name(inputName)}>Set Name</button><br /> <br />
                 <input type='text' name="name" onChange={(e) => this.handleActivity(e)} /><br />
