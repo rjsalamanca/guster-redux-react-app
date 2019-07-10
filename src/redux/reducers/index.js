@@ -1,3 +1,4 @@
-import { combineReducers } from 'react';
+import { combineReducers } from 'redux';
+import activityReducer from './activity';
 
-export default combineReducers();
+export default combineReducers({ name: activityReducer, activity: activityReducer });

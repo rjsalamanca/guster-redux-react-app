@@ -1,10 +1,12 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+
+import Guster from './components/guster';
 
 function App() {
   return (
     <div className="App">
+      <Guster />
     </div>
   );
 }
